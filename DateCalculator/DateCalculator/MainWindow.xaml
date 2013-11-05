@@ -1,0 +1,15 @@
+﻿<Window x:Class="DateCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="日期计算器" Height="280" Width="350" Topmost="True" WindowStartupLocation="CenterScreen" Icon="Calendar .ico" ResizeMode="NoResize">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,56,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="184" x:Name="txtBegin"/>
+        <Label Content="开始时间：" HorizontalAlignment="Left" Margin="50,53,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" x:Name="txtEnd"/>
+        <Label Content="结束时间：" HorizontalAlignment="Left" Margin="50,103,0,0" VerticalAlignment="Top" />
+        <Label Content="结果：" HorizontalAlignment="Left" Margin="50,160,0,0" VerticalAlignment="Top"/>
+        <Label  HorizontalAlignment="Left" Margin="125,160,0,0" VerticalAlignment="Top" x:Name="lblResult"/>
+        <Button Content="计算" HorizontalAlignment="Left" Margin="125,197,0,0" VerticalAlignment="Top" Width="75" x:Name="btnCalc" Click="btnCalc_Click"/>
+
+    </Grid>
+</Window>
