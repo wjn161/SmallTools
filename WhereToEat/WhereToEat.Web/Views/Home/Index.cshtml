@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Where To Eat";
+}
+<div data-role="page">
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <a href="#" data-icon="delete">取消</a>
+        <h1>设置</h1>
+        <a href="#" data-icon="check">保存</a>
+    </div>
+    <div data-role="content">
+        <div class="ui-body">
+            <div data-role="fieldcontain">
+                <label for="txtDate">日 期:</label>
+                <input type="text" name="txtDate" id="txtDate" value="2013-11-07" readonly="readonly" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="txtWheater">天 气:</label>
+                <input type="text" name="txtWheater" id="txtWheater" value="阴转小雨" readonly="readonly" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="txtRCount">餐 馆:</label>
+                <input type="text" name="txtRCount" id="txtRCount" value="共20家" readonly="readonly" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="txtRCount">预 算(人均):</label>
+                <input type="number" name="txtRCount" pattern="[0-9]*" id="txtRCount" value="">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="hasVehicle">是否开车:</label>
+                <select name="hasVehicle" id="hasVehicle" data-role="slider">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="customerNum" class="select">用餐人数:</label>
+                <select name="customerNum" id="customerNum">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+        </div><!-- /body-b -->
+    </div>
+</div>
